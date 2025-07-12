@@ -31,9 +31,9 @@ public class MenuPrincipal extends JFrame implements ActionListener
     private JMenuItem nacionalidadeItem, provinciaItem, municipioItem, comunaItem, metodoPagamentoItem,
     tipoDeServicoItem, especialidadeItem;
 
-    public MenuPrincipal()
+    public MenuPrincipal(String user)
     {
-        super("Menu Principal");
+        super("Menu Principal | Operador " + user);
 
         instanciarObjetos();
 
@@ -250,6 +250,6 @@ public class MenuPrincipal extends JFrame implements ActionListener
     public static void main(String[] args)
     {
         Vector_Tabelas.inic();
-        new MenuPrincipal();
+        new MenuPrincipal("");
     }
 }
